@@ -1,0 +1,86 @@
+@import url('/assets/css/animacao.css');
+@import url('/assets/css/pre-def.css');
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #020655;
+    backdrop-filter: blur(20px);
+    z-index: 100000;
+}
+header > img{
+    max-width: 180px;
+    width: 100%;
+    
+}
+main{
+    padding: 80px 1rem;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    
+}
+main > aside > ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main > aside > ol li{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.572);
+    max-width: 350px;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 1.2rem;
+    color: #020655;
+
+
+}
+main > aside > ol li img{
+    max-width: 54px;
+    width: 100%;
+}
+#principal{
+    background-color: rgba(240, 248, 255, 0.572);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.especificacoes{
+
+    & h2{
+        padding-bottom: 20px;
+        font-size: 32px;
+        color: #020655;
+    }
+
+    & span{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    & ol {
+        display: flex;
+        gap: 20px;
+    }
+    & ol li{
+        filter: brightness(1);
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+.pokemons:hover{
+    cursor: pointer;
+    transition: .2s;
+    transform: translateX(20px);
+}
