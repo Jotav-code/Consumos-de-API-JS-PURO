@@ -1,75 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon</title>
+    <title>Pokedex</title>
+
     <link rel="stylesheet" href="assets/css/main.css">
+
 </head>
-<body class="area"  >
-    <header>
-        <img src="assets/img/logo.png" alt="">
-    </header>
-    <main >
-        
-        <aside>
-            <ol id="lista-de-pokemons" >
-                <!-- <li class="pokemons">
-                    <div class="content">
-                        <h2 class="nome">bulbasaur</h2>
-                        <span class="order">#001</span>
-                    </div>
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="">
-                </li> -->
-            </ol>
-        </aside>
 
-        <section id="principal">
-            <div class="main">
-                <div class="content-main">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="">
+<body>
 
-                    <div class="especificacoes">
-                        <h2 class="nome">bulbasaur</h2>
-                        <span>Tipos </span>
-                        <ol class="tipos">
-                            <li>grass</li>
-                            <li>poison</li>
-                        </ol>
-                    </div>
+    <section class="inicio">
+        <h1>Pokedex</h1>
+        <ol id="pokemonList" class="pokemos">
+            <!-- <li class="pokemon">
+                <span class="number">#001</span>
+                <span class="name">Bulbasaur</span>
+                
+                <div class="datail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">posion</li>
+                    </ol>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
                 </div>
-            </div>
-        </section>
+            </li> -->
 
-    </main>
+            <!-- <li>
+                Ivisaur
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg" alt="Ivisaur">
+            </li>
+            <li>
+                Venusaur
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg" alt="Venusaur">
+            </li>
 
-    <footer>
+            <li>
+                Charmander
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg" alt="Charmander">
+            </li>
 
-    </footer>
+            <li>
+                Chameleon
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg" alt="Chameleon">
+            </li>
+
+            <li>
+                Charizard
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg" alt="Charizard">
+            </li> -->
+            
+        </ol>
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load More
+            </button>
+        </div>
+    </section>
+
+    <script src="assets/js/poke-api-model.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
 
 
 
-
-    <!--Animação-->
-    <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-    </ul>
-
-
-          
-    <script src="assets/js/poke-api.js"></script>
-    <script src="assets/js/Pokemon.js"></script>
-    <script src="assets/js/main.js"></script>  
-    
-    
 </body>
 </html>
