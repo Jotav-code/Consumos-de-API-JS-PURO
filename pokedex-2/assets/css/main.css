@@ -30,6 +30,7 @@ main > aside > ol{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 650px;
 }
 main > aside > ol li{
     display: flex;
@@ -94,7 +95,7 @@ main > aside > ol li img{
 }
 
 .pagination{
-    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
