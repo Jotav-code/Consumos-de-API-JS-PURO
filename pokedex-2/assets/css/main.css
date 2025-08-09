@@ -30,7 +30,7 @@ main > aside > ol{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 650px;
+    
 }
 main > aside > ol li{
     display: flex;
@@ -114,5 +114,19 @@ main > aside > ol li img{
 
     & button:hover{
         filter: brightness(.8);
+    }
+}
+
+@media(max-width: 850px){
+    main{
+        flex-direction: column-reverse;
+        justify-content: center !important;
+        gap: 20;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
