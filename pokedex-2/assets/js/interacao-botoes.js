@@ -29,32 +29,22 @@ interacao.getList = (() => {
 })
 interacao.getList();
 
-prev.addEventListener('click', () => {
-  operacao -= LIMIT
 
+prev.addEventListener('click', () => {
+  operacao -= LIMIT;
   if (operacao < 0) {
     operacao = 0;
-    // console.log(
-    //   "passei aqui no prev quando é menor que zero"
-    //   , operacao)
-    ExibirPokemons(operacao, LIMIT);
   }
-  else {
-    // console.log(
-    //   "passei aqui no prev quando é maior que zero"
-    //   , operacao)
-    ExibirPokemons(operacao, LIMIT);
-  }
-})
+  ExibirPokemons(operacao, LIMIT);
+});
 
-next.addEventListener('click', (() => {
+next.addEventListener('click', () => {
   operacao += LIMIT;
-  if (operacao > maxPokemon) {
-    operacao = LIMIT - (operacao - maxPokemon)
-    ExibirPokemons(operacao, LIMIT);
+  console.log(operacao)
+  if (operacao > maxPokemon - LIMIT) {
+    operacao = maxPokemon - LIMIT;
+    console.log(operacao)
   }
-  else {
-    ExibirPokemons(operacao, LIMIT);
-  }
-}))
+  ExibirPokemons(operacao, LIMIT);
+});
 
