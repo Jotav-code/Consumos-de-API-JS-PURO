@@ -8,7 +8,7 @@ function convertPrincipal(pokemon) {
 
                     <div class="especificacoes">
                         <h2 class="nome">${pokemon.nome}</h2>
-                        <span>Tipos </span>
+                        <span>Tipo </span>
                         <ol class="tipos">
                             ${pokemon.tipos.map((tipo) => {
         return `<li>${tipo}</li>`
