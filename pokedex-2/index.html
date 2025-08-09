@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" >
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="area"  >
+<body >
     <header>
         <img src="assets/img/logo.png" alt="">
     </header>
@@ -22,6 +23,10 @@
                     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="">
                 </li> -->
             </ol>
+            <div class="pagination">
+                <button id="prev">prev</button>
+                <button id="next">next</button>
+            </div>
         </aside>
 
         <section id="principal">
@@ -45,30 +50,29 @@
 
     <footer>
 
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+
     </footer>
-
-
-
-
     <!--Animação-->
-    <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-    </ul>
+   
 
-
-          
     <script src="assets/js/poke-api.js"></script>
     <script src="assets/js/Pokemon.js"></script>
     <script src="assets/js/main.js"></script>  
+    <script src="assets/js/interacao-botoes.js" ></script>    
     
     
 </body>
